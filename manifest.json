@@ -1,0 +1,19 @@
+{
+    "name": "TimeZoner",
+    "version": "0.1",
+    "description": "Change Date to your current timezone",
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ]
+}
